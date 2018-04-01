@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
     <!-- <title>My Vue.js App</title> -->
     <script>
       // Re-route if main path hit
@@ -20,7 +22,23 @@
   </head>
   <body>
     <div id="app"></div>
+    <div class="pac-card" id="pac-card">
+      <div id="pac-container">
+        <input id="pac-input" type="text"
+            placeholder="Suggest Location">
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon">
+      <span id="place-name"  class="title"></span><br>
+      <span id="place-address"></span>
+    </div>
+
+    <div id="place-list">
+    </div>
     <script src="static/main.js"></script>
     <script src="static/lib.js"></script>
+    <script src="static/map.js"></script>
   </body>
 </html>

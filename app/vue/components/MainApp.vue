@@ -38,22 +38,12 @@
 
 <template>
   <div>
-    <h1>
-      Welcome to your Vue App on stdlib!
-    </h1>
-    <div class="love">
-      <img src="static/vue_logo.png" style="height: 32px;">
-      +
-      <img src="static/stdlib.png" style="height: 32px;">
-      = <span class="heart">&lt;3</span>
-    </div>
-    <hr>
+    <!-- <hr>
       <div class="router-links">
         <router-link to="/">Create Page</router-link>
-        <router-link to="/test">Test Page</router-link>
-        <router-link to="/index">Index Page</router-link>
+        <router-link to="/app">App Page</router-link>
       </div>
-    <hr>
+    <hr> -->
     <router-view class="view"></router-view>
   </div>
 </template>
@@ -62,7 +52,7 @@
 export default {
   data() {
     return {
-      brand: 'cOOrdinate'
+      brand: 'cOOrdinate',
     }
   }
 }

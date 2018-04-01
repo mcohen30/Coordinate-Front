@@ -1,11 +1,24 @@
 <template>
   <form>
-    <button type="button" class="btn btn-link" v-on:click="submit">Submit</button>
+    <input v-model="text">
+    <button v-model="text" @click="submit">Submit</button>
+    You typed {{ text }}
   </form>
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      text: ''
+    };
+  },
   methods: {
-    submit: ()=> { return 'text' }
+    submit: function(event) {
+      lib['leroydevelops.coordinateBack[@dev]']({name: this.text}, (err, result) => {
+        alert(result);
+      })
+    }
   }
+}
 </script>
