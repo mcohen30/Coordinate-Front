@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import HomePage from './pages/HomePage.vue';
-import TestPage from './pages/TestPage.vue';
+import Home from './pages/Home.vue';
+import Test from './pages/Test.vue';
+import Create from './pages/Create.vue';
 
 Vue.use(VueRouter);
 
@@ -12,11 +13,15 @@ let router = new VueRouter({
   routes: [
     {
       path: '/',
-      component: HomePage
+      component: Create
+    },
+    {
+      path: '/home',
+      component: Home
     },
     {
       path: '/test',
-      component: TestPage
+      component: Test
     }
   ]
 });

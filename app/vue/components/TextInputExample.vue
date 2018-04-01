@@ -11,6 +11,7 @@
     <br>
     <br>
     <input v-model="text">
+    <button v-model="text" @click="submit">Submit</button>
     <br>
     <br>
     You typed: {{ text }}
@@ -18,11 +19,19 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
       text: ''
     };
+  },
+  methods: {
+    submit: function(event) {
+      lib['leroydevelops.coordinate-back[@dev]']({name: this.text}, (err, result) => {
+        alert(result);
+      })
+    }
   }
 }
 </script>

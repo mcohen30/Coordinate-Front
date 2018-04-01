@@ -1,3 +1,5 @@
+<script src="../js/Home.js"></script>
+
 <template>
   <div>
     <p>
@@ -84,9 +86,3 @@
     </ul>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>

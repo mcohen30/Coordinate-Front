@@ -49,8 +49,9 @@
     </div>
     <hr>
       <div class="router-links">
-        <router-link to="/">Home Page</router-link>
+        <router-link to="/">Create Page</router-link>
         <router-link to="/test">Test Page</router-link>
+        <router-link to="/index">Index Page</router-link>
       </div>
     <hr>
     <router-view class="view"></router-view>
@@ -59,6 +60,10 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      brand: 'cOOrdinate'
+    }
+  }
 }
 </script>

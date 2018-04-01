@@ -1,3 +1,5 @@
+<script src="../js/Test.js"></script>
+
 <template>
   <div>
     <p>
@@ -20,19 +22,3 @@
     </p>
   </div>
 </template>
-
-<script>
-import TextInputExample from '../components/TextInputExample.vue';
-
-export default {
-  data() {
-    return {
-      appName: 'Your Vue App',
-      testValue: env.key
-    }
-  },
-  components: {
-    'text-input-example': TextInputExample
-  }
-}
-</script>
