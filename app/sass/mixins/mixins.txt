@@ -1,0 +1,8 @@
+.scss files that relate to mixins needed for components go in this directory
+
+example
+-------
+
+sticky.scss  # functionality to making a div sticky
+justify.scss # functionality for justify a text right when clicked
+blur.scss    # functionality for blurring an image when over

@@ -1,0 +1,8 @@
+.scss files that relate to animations go in this directory
+
+example
+-------
+
+bounce.scss   # can contain .bounce-fast .bounce-slow
+fade.scss     # can contain .fade-in .fade-out
+slide.scss    # can contain .slide-left .slide-right

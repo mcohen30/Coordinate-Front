@@ -1,0 +1,44 @@
+{
+  "name": "coordinate",
+  "version": "1.0.0",
+  "description": "A web application for creating and sharing group maps",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run build && npm run dev",
+    "restart": "npm stop && npm start",
+    "build": "gulp",
+    "dev": "concurrently \"PORT=3000 nodemon --watch /app app.js\" \"npm run open\"",
+    "open": "if [ -n $(which open) ]; then open http://localhost:3000; fi",
+    "prod": "npm run build && NODE_ENV=production node app.js",
+    "release": "echo \"Nothing on release yet!\"",
+    "prestart": "mkdir -p data && npm run mongoup",
+    "stop": "npm run mongodown",
+    "mongoup": "mongod --dbpath data --fork --logpath /dev/null",
+    "mongodown": "mongo admin --eval 'db.shutdownServer()' > /dev/null",
+    "postinstall": "node_modules/.bin/bower install --silent && npm start"
+  },
+  "authors": [
+    "Alex Shin",
+    "Leroy Leslie",
+    "Mav Cohen",
+    "Ryan Kortvelesy"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "hbs": "^4.0.1",
+    "lib": "^3.0.2",
+    "mongoose": "^5.0.12",
+    "node-sass": "^4.8.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "gulp-watch-sass": "^1.4.1",
+    "nodemon": "^1.17.3"
+  }
+}

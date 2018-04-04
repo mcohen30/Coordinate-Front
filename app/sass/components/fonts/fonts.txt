@@ -1,0 +1,8 @@
+.scss files that relate to fonts go in this directory
+
+example
+-------
+
+size.scss     # can contain .large  .medium .small
+family.scss   # can contain .lato   .bodoni .helvetica
+style.scss    # can contain .italic .heavy  .black

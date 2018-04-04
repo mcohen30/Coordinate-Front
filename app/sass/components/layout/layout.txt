@@ -1,0 +1,8 @@
+.scss files that relate to page layout go in this directory
+
+example
+-------
+
+navbar.scss
+signin.scss
+footer.scss

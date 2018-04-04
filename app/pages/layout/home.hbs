@@ -1,0 +1,17 @@
+<title>{{title}}</title>
+
+<div class="screen" style="background-color: rgb(94, 109, 222)">
+  <form class="center horizontal" name="myForm" ng-controller="create" class="my-form" ng-submit="submit()">
+    <input name="input" ng-model="group.name" required style="display: inline-block; text-align: center; color: white; font-size:32px;">
+    <input class="waves-effect waves-light btn" type="submit" id="submit" value="Create a Group" style="display: inline-block;"></input>
+  </form>
+</div>
+
+{{#each introduction_block}}
+  <div class="screen" style="background-color: {{color}}">
+    <div class="center horizontal">
+      <p class="large">{{header}}</p>
+      <p class="medium">{{dialog}}</p>
+  </div>
+  </div>
+{{/each}}

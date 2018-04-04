@@ -1,0 +1,8 @@
+.scss files that relate to variables go in this directory
+
+example
+-------
+
+breakpoints.scss  # contains changeable data on bootstrap breakpoints
+colors.scss       # contains changeable data on color scheme
+transitions.scss  # contains changeable data on time of transitions

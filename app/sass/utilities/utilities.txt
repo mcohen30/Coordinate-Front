@@ -1,0 +1,7 @@
+.scss files that correspond to the bower util made for importing prefab stylesheets go in this directory
+
+example
+-------
+
+bootstrap.scss    # contains @import function for bower installed bootstrap
+materialize.scss  # contains @import function for bower installed materialize

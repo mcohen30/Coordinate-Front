@@ -1,0 +1,8 @@
+.screen {
+  height: 100vh;
+  position: relative;
+
+  &.half {
+    height: 50vh;
+  }
+}

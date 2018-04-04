@@ -1,0 +1,6 @@
+.scss files that can be inherited go in this directory
+
+example
+-------
+
+modal.scss  # contains basic modal properties that is changed per layout page

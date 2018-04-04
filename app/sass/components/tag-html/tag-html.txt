@@ -1,0 +1,8 @@
+.scss files that relate to default html tags go in this directory
+
+example
+-------
+
+body.scss
+p.scss
+a.scss

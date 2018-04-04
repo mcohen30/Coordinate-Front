@@ -1,0 +1,29 @@
+{
+  "title": "Create A Map | Coordinate",
+  "introduction_block": [
+    {
+      "header": "What is Coordinate?",
+      "dialog": "Coordinate is a quick way to blah blah blah. How does it work? Well the steps are quite easy...",
+      "color": "#ee8d33",
+      "background-image": ""
+    },
+    {
+      "header": "Step One",
+      "dialog": "Create a Group",
+      "color": "#33ee3b",
+      "background-image": ""
+    },
+    {
+      "header": "Step Two",
+      "dialog": "Share your link",
+      "color": "#eb6fc8",
+      "background-image": ""
+    },
+    {
+      "header": "Step Three",
+      "dialog": "Join and enjoy!",
+      "color": "#1dded2",
+      "background-image": ""
+    }
+  ]
+}
