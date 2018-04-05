@@ -15,7 +15,7 @@
     "stop": "npm run mongodown",
     "mongoup": "mongod --dbpath data --fork --logpath /dev/null",
     "mongodown": "mongo admin --eval 'db.shutdownServer()' > /dev/null",
-    "postinstall": "node_modules/.bin/bower install --silent && npm start"
+    "postinstall": "node_modules/.bin/bower install --silent"
   },
   "authors": [
     "Alex Shin",
